@@ -6,6 +6,14 @@ html, body {
     height:50%;
 }
 
+.carousel-caption h3 {
+/*    background-color: rgb(20, 156, 130);
+    background-color: rgba(0,0,0, 0.65);        */
+}
+
+.carousel-caption div {
+}
+
 .item,
 .active,
 .carousel-inner {
@@ -129,13 +137,12 @@ widget {
     margin: 5px 0px;
 }
 
-.item-ct .item-image{
-    max-height: 150px;
+.item-ct-image {
 }
 
-.item-ct .item-image img{
+.item-ct .item-ct-image img {
     padding: 5px 0px;
-    height: 140px;
+    height: 180px;    
     width: auto;
     display: block;
     margin: 0 auto;
@@ -169,6 +176,19 @@ widget {
     background: #f3f3f3;
     border: 1px solid #eee;
     box-shadow: inset 0px 0px 1px #888;
+}
+
+.best-deals {
+}
+
+.best-deal img {
+    height: 180px; 
+    width: auto; 
+    float:left;
+    margin-right: 20px; 
+}
+
+.best-deal p {    
 }
 
 /* Footer */
