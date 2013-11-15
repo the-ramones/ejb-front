@@ -82,11 +82,11 @@ widget {
 
 /* Item */
 
-.items-ct{
-    margin: 20px 0px;
+.items-ct .row{
+    margin-bottom: 20px;
 }
 
-.items-ct .breadcrumb{
+.items-ct .breadcrumb {
     background: transparent;
     border: 0px solid #eee;
     padding: 0px 0px 5px 0px;
