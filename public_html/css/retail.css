@@ -35,7 +35,7 @@ footer {
 }*/
 
 .ft {
-    /*border-top: 8px solid rgb(20, 156, 130);*/    
+    border-top: 8px solid rgb(20, 156, 130);    
     background-color: rgb(236, 240, 241);
     padding:  15px 0;
 }
@@ -49,12 +49,126 @@ footer {
     text-align: left;
 }
 
+.ft-hr {
+    margin: 10px;
+}
+
 widget {
 
 }
-    
-.ft-hr {
-    margin: 10px;
+
+.totop {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.totop a, .totop a:visited{
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(24, 188, 156);
+}
+
+.totop a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Item */
+
+.items-ct{
+    margin: 20px 0px;
+}
+
+.items-ct .breadcrumb{
+    background: transparent;
+    border: 0px solid #eee;
+    padding: 0px 0px 5px 0px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+.item-ct{
+    min-height: 280px;
+    /*max-height: 300px;*/
+    max-width: 250px;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border: 1px solid #f3f3f3;
+    box-shadow: inset 0px 0px 1px #ddd;
+    -webkit-transition:box-shadow 1s ease;
+    -moz-transition:box-shadow 1s ease;
+    -o-transition:box-shadow 1s ease;
+    transition:box-shadow 1s ease;
+}
+
+.item-ct:hover{
+    box-shadow: inset 0px 0px 5px #ccc;
+    -webkit-transition:box-shadow 1s ease;
+    -moz-transition:box-shadow 1s ease;
+    -o-transition:box-shadow 1s ease;
+    transition:box-shadow 1s ease;	
+}
+
+.item-ct .ico{
+    color: #fff;
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.item-ct hr{
+    margin: 5px 0px;
+}
+
+.item-ct .item-image{
+    max-height: 150px;
+}
+
+.item-ct .item-image img{
+    padding: 5px 0px;
+    height: 140px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-ct .item-details h5{
+    text-align: center;
+}
+
+.item-ct .item-details h5 a{
+    color: #666;
+}
+
+.item-ct .item-details h5 a:hover{
+    text-decoration: none;
+}
+
+.item-ct .item-details p{
+    text-align: center;
+}
+
+.item-ct .item-price{
+    margin: 7px 0px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 5px !important;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    background: #f3f3f3;
+    border: 1px solid #eee;
+    box-shadow: inset 0px 0px 1px #888;
 }
 
 /* Footer */
