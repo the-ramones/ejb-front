@@ -2,13 +2,17 @@ html, body {
     height:100%;
 }
 
+body {
+    /*padding-top: 60px;*/
+}
+
 .carousel {
     height:50%;
 }
 
 .carousel-caption h3 {
-/*    background-color: rgb(20, 156, 130);
-    background-color: rgba(0,0,0, 0.65);        */
+    /*    background-color: rgb(20, 156, 130);
+        background-color: rgba(0,0,0, 0.65);        */
 }
 
 .carousel-caption div {
@@ -33,6 +37,7 @@ html, body {
 
 footer {
     /*margin: 50px 0;*/
+    /*width: 100%;*/
 }
 
 /*.container {
@@ -189,6 +194,66 @@ widget {
 }
 
 .best-deal p {    
+}
+
+.recent {
+    padding: 0px 0px;
+    margin: 15px 0;
+}
+
+.control-container .carousel-control {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: rgb(24, 188, 156);
+    opacity: 1;
+    /*float: right;*/
+    z-index: 100;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    position: relative;
+    border-radius: 3px;
+}
+
+.recent .control-container {
+    position: relative;
+}
+
+.recent-item {
+}
+
+.recent .carousel .item .col-md-3:first-child {
+    padding-left: 0;
+}
+
+.recent .carousel .item .col-md-3:last-child {
+    padding-right: 0;
+}
+
+.recent-item-img {
+    background: none repeat scroll 0% 0% rgb(250, 250, 250);
+    padding: 10px 0px;
+    box-shadow: 0px 0px 3px rgb(221, 221, 221) inset;
+    border: 1px solid rgb(238, 238, 238);
+}
+
+.recent-item-img img { 
+    height: 180px;
+    width: auto;    
+}
+
+.recent-item-details {
+    background: none repeat scroll 0% 0% rgb(24, 188, 156);
+    border-top: 1px solid rgb(18, 143, 118);
+    border-bottom: 1px solid rgb(18, 143, 118);
+    color: rgb(255, 255, 255);
+    padding: 7px 10px 10px;
+}
+
+.recent-item-details a {
+    color: rgb(255, 255, 255);
 }
 
 /* Footer */
