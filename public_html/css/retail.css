@@ -53,7 +53,7 @@ body {
 }
 
 #filterinput:focus {
-    
+
 }
 
 .head-support {
@@ -66,6 +66,44 @@ body {
 
 textarea {
     z-index: 100;
+}
+
+/* Font */
+form input[type="text"], 
+form input[type="password"],
+form input[type="email"],
+select {
+    /*font-size: 19px;*/
+}
+
+/* Modals */
+.modal {
+    top: 10%;    
+}
+
+/*.modal-content {
+    background-color: rgb(24, 188, 156);    
+}
+
+.modal-header {    
+}
+
+.modal-body {
+    background-color:  rgb(255,255,255);
+}
+
+.modal-footer {
+    background-color:  rgb(255,255,255);
+    border-radius: 0 0 6px 6px;
+}
+
+.modal-title {
+    background-color: rgb(24, 188, 156);    
+    color: #fff;
+}*/
+
+.modal-footer {
+    margin-top: -15px;
 }
 
 /* Nav bar */
