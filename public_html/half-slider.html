@@ -28,23 +28,61 @@
         <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-retail-collapse">
+                        <span class="sr-only">Retail Store Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Retail Store</a>
+                    <a class="navbar-brand" href="#"><i class="fa fa-lg fa-home"></i></a>                   
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <div class="collapse navbar-collapse navbar-retail-collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#about">Store</a></li>
-                        <li><a href="#services">Support</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#store">Store</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">
+                                Pages 
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="#"><i class="fa fa-home"></i> &nbsp; General</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-headphones"></i> &nbsp; Support</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-user"></i> &nbsp; Login</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-users"></i> &nbsp; Register</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-book"></i> &nbsp; Blog</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Blog Article</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-warning"></i> &nbsp; 404</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#account">
+                                <i class="fa fa-user"></i> &nbsp;Account
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="#">My Account</a></li>
+                                <li role="presentation"><a href="#">View Cart</a></li>
+                                <li role="presentation"><a href="#">Checkout</a></li>
+                                <li role="presentation"><a href="#">Wish List</a></li>
+                                <li role="presentation"><a href="#">Order History</a></li>
+                                <li role="presentation"><a href="#">Edit Profile</a></li>
+                                <li role="presentation"><a href="#">Confirmation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact"><i class="fa fa-info"></i> &nbsp;Contact</a></li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">3 item(s) in your <i class="fa fa-shopping-cart"></i> - 25 <i class="fa fa-dollar"></i></a></li>
+                        <li><a href="#login">Login</a></li>                                                
+                    </ul>
+
+                    <form name="search-form" class="navbar-form navbar-left" role="search">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input id="search" type="text" class="form-control col-md-6" placeholder="Search">
+                    </form>
+                </div> <!--/.navbar-collapse -->
             </div><!-- /.container -->
         </nav>
 

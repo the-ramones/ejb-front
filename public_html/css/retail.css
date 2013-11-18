@@ -3,7 +3,75 @@ html, body {
 }
 
 body {
-    /*padding-top: 60px;*/
+    padding-top: 60px;
+}
+
+.navbar {
+    font-size: 19px;
+}
+
+.navbar .dropdown-menu {
+    font-size: 19px;    
+}
+
+.navbar-retail-collapse {
+
+}
+
+.search-container {
+    position: relative;
+}
+
+.navbar-retail-collapse #search {
+}
+
+form[name="search-form"] {
+    position: relative;
+    padding: 0;
+    /*max-width: 280px;*/
+}
+
+form[name="search-form"]:focus {
+    /*width: 400px;*/
+    /*width: max-content;*/
+}
+
+form[name="search-form"] > input[type="text"] {
+    padding-left: 36px;
+    font-size: 19px;    
+}
+
+form[name="search-form"] > .glyphicon {
+    position: absolute;
+    left: 0;
+    z-index: 20;
+    padding: 10px 12px;
+}
+
+
+#search {
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.nav li a {
+    /*border: 1px solid black;*/
+}
+
+.navbar form {
+    /*border: 1px solid black;*/
+}
+
+#search:focus {
+    width: 100%;
+}
+
+
+#search-btn {
+}
+
+.navbar .dropdown-menu li a {
+    padding: 10px 20px;
 }
 
 .carousel {
@@ -391,4 +459,13 @@ i.pinterest{
     -moz-transition:background 1s ease;
     -o-transition:background 1s ease;
     transition:background 1s ease;
+}
+
+
+@media (min-width: 768px) {
+
+    #search {
+        width: 80%;   
+    }
+
 }
