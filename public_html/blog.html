@@ -74,8 +74,16 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">3 item(s) in your <i class="fa fa-shopping-cart"></i> - 25 <i class="fa fa-dollar"></i></a></li>
-                        <li><a href="#login">Login</a></li>                                                
+                        <li><a href="#" data-toggle="modal" data-target="#cartModal">5 item(s) in your <i class="fa fa-shopping-cart"></i> - 25 <i class="fa fa-dollar"></i></a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#sign">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#login" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                <li><a href="#register" data-toggle="modal" data-target="#registerModal">Register</a></li>
+                            </ul>
+                        </li>
                     </ul>
 
                     <form name="search-form" class="navbar-form navbar-left" role="search">
@@ -86,94 +94,154 @@
             </div><!-- /.container -->
         </nav>
 
-
-        <div class="head-block head-contact">
+        <div class="head-block head-support">
             <div class="container">
-                <h2>Retail Store</h2>
-                <p>Innovative online store for geeks or just modern people.</p>
+                <h2>Retail Store Blog</h2>
+                <p>Trends, social, modern.</p>
             </div>
         </div>
 
         <div class="container">
             <div class="row" style="margin-bottom: 15px;">
-                <div class="col-md-6">
-                    <h4>Contact Us</h4>
+                <div class="col-md-8">
+                    <div class="entry">
+                        <h3>
+                            <a href="#">Ut commodo ullamcorper risus nec mattis</a>
+                        </h3>
+                        <div class="meta">                            
+                            <i class="fa fa-calendar"></i><span>26-2-201</span>
+                            <i class="fa fa-user"></i><span>Admin</span>
+                            <i class="fa fa-folder-open"></i><span><a href="#">GENERAL</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o"></i> <a href="#">2 comments</a></span>
+                        </div>
+                        <div class="blog-img">
+                            <img src="img/blog/blog-3.jpg" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h4></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. Praesent ultricies enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. Duis a risus sed dolor placerat semper quis in urna. Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut commodo ullamcorper risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
+                            </p>
+                        </div>  
+                        <a class="btn btn-sm btn-success" href="#">Read More..</a>
+                    </div>                  
                     <hr />
-                    <form class="form-horizontal" role="form" action="#">
-                        <div class="form-group">
-                            <label for="name" class="control-label col-md-3">Name</label>
-                            <div class="col-md-9">
-                                <input id="name" type="text" class="form-control" placeholder="Name">
-                            </div>
+                    <div class="entry">
+                        <h3>
+                            <a href="#">Ut commodo ullamcorper risus nec mattis</a>
+                        </h3>
+                        <div class="meta">
+                            <i class="fa fa-calendar"></i><span>26-2-201</span>
+                            <i class="fa fa-user"></i><span>TechGuru</span>
+                            <i class="fa fa-folder-open"></i><span><a href="#">TECH</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o"></i> <a href="#">5 comments</a></span>
                         </div>
-                        <div class="form-group">
-                            <label for="email" class="col-sm-3 control-label">Email</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
+                        <div class="blog-img">
+                            <img src="img/blog/blog-4.jpg" alt="">
                         </div>
-                        <div class="form-group">
-                            <label for="website" class="control-label col-md-3">Website</label>
-                            <div class="col-md-9">
-                                <input id="website" class="form-control" type="url" placeholder="Website">
-                            </div>
+                        <div class="blog-body">
+                            <h4></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. Praesent ultricies enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. Duis a risus sed dolor placerat semper quis in urna. Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut commodo ullamcorper risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
+                            </p>
                         </div>
-                        <div class="form-group">
-                            <label for="comment" class="control-label col-md-3">Comment</label>
-                            <div class="col-md-9">
-                                <textarea id="comment" class="form-control">Leave a comment..</textarea>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-offset-3 col-md-9">
-                                <button type="submit" class="btn btn-sm btn-primary">Submit</button>
-                                <button type="reset" class="btn btn-sm btn-default">Reset</button>
-                            </div>
-                        </div>
-                    </form>
-                    <hr />
-                    <div style="margin-bottom: 15px;">
-                        <h3 class="text-center">Get in touch</h3>
-                        <div class="social social-2x text-center">
-                            <a href="#"><i class="fa fa-2x fa-facebook facebook"></i></a>
-                            <a href="#"><i class="fa fa-2x fa-twitter twitter"></i></a>
-                            <a href="#"><i class="fa fa-2x fa-linkedin linkedin"></i></a>
-                            <a href="#"><i class="fa fa-2x fa-google-plus google-plus"></i></a> 
-                            <a href="#"><i class="fa fa-2x fa-linkedin linkedin"></i></a> 
-                        </div>
-                    </div>  
-                </div>
-                <div class="col-md-6">
-                    <h4>Google Map</h4>
-                    <hr />
-                    <div class="gmap">
-                        <iframe scrolling="no" height="250" frameborder="0" src="http://maps.google.co.in/maps?f=q&source=s_q&hl=en&geocode=&q=Google+India+Bangalore,+Bennigana+Halli,+Bangalore,+Karnataka&aq=0&oq=google+&sll=9.930582,78.12303&sspn=0.192085,0.308647&ie=UTF8&hq=Google&hnear=Bennigana+Halli,+Bangalore,+Bengaluru+Urban,+Karnataka&t=m&ll=53.876603,27.573001&spn=0.012545,0.036006&z=15&output=embed" marginwidth="0" marginheight="0"></iframe>
+                        <a class="btn btn-sm btn-success" href="#">Read More..</a>
                     </div>
-                    <h4>Address</h4>
                     <hr />
-                    <p>
-                        Web Studio, Inc.<br />
-                        100 Independence Ave., Suite 100<br />
-                        Minsk, BE 220300<br />
-                        P: (123) 456-7890.<br /><br />
-                        <a href="mailto:#">somecompany@gmail.com</a>
-                    </p>
-
-                </div>
-            </div>
-
-            <!--subscribe-->
-            <div class="well well-lg">
-                <h4><span class="glyphicon glyphicon-envelope"></span><span> Hot offers - Don't miss anything</span></h4>
-                <p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. Phasellus condimentum rutrum aliquet.</p>
-                <form class="form-inline">
-                    <div class="form-group" style="width: 30%;" >
-                        <label class="sr-only" for="subscribe">Subscribe</label>
-                        <input class="form-control" type="text" id="subscribe" placeholder="Enter your e-mail to Subscribe" />
+                    <div class="entry">
+                        <h3>
+                            <a href="#">Sed justo scelerisque ut consectetur</a>
+                        </h3>
+                        <div class="meta">
+                            <i class="fa fa-calendar"></i><span>26-2-201</span>
+                            <i class="fa fa-user"></i><span>Paul</span>
+                            <i class="fa fa-folder-open"></i><span><a href="#">TRENDS</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o"></i> <a href="#">1 comment</a></span>
+                        </div>
+                        <div class="blog-img">
+                            <img src="img/blog/blog-1.png" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h4></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. Praesent ultricies enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. Duis a risus sed dolor placerat semper quis in urna. Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut commodo ullamcorper risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
+                            </p>
+                        </div>
+                        <a class="btn btn-sm btn-success" href="#">Read More..</a>
                     </div>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>
-            </div>
+                    <hr />
+                    <div class="entry">
+                        <h3>Sed justo scelerisque ut consectetur</h3>
+                        <div class="meta">
+                            <i class="fa fa-calendar"></i><span>26-2-201</span>
+                            <i class="fa fa-user"></i><span>Marika</span>
+                            <i class="fa fa-folder-open"></i><span><a href="#">GENERAL</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o"></i> <a href="#">10 comments</a></span>
+                        </div>
+                        <div class="blog-img">
+                            <img src="img/blog/blog-2.jpg" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h4></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. Praesent ultricies enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. Duis a risus sed dolor placerat semper quis in urna. Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut commodo ullamcorper risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
+                            </p>
+                        </div>
+                        <a class="btn btn-sm btn-success" href="#">Read More..</a>
+                    </div>
+                    <hr />
+                    <div class="entry">
+                        <h3>
+                            <a href="#">Ut commodo ullamcorper risus nec mattis</a>
+                        </h3>
+                        <div class="meta">
+                            <i class="fa fa-calendar"></i><span>26-2-201</span>
+                            <i class="fa fa-user"></i><span>Admin</span>
+                            <i class="fa fa-folder-open"></i><span><a href="#">GENERAL</a></span>
+                            <span class="pull-right"><i class="fa fa-comment-o"></i> <a href="#">7 comments</a></span>
+                        </div>
+                        <div class="blog-img">
+                            <img src="img/blog/blog-5.png" alt="">
+                        </div>
+                        <div class="blog-body">
+                            <h4></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. Praesent ultricies enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. Duis a risus sed dolor placerat semper quis in urna. Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut commodo ullamcorper risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
+                            </p>
+                        </div>
+                        <a class="btn btn-sm btn-success" href="#">Read More..</a>
+                    </div>
+
+                </div>                
+                <div class="col-md-4 sidebar">
+                    <div class="widget">
+                        <h4>SEARCH</h4>
+                        <hr />
+                        <form name="searchForm" action="#" class="form-search form-inline" role="search" aria-hidden="true">
+                            <div class="form-group">
+                                <input type="text" class="input-sm form-control" id="search2">
+                            </div>
+                            <button type="submit" class="btn btn-sm btn-default">Search</button>
+                        </form>
+                    </div>
+                    <div class="widget">
+                        <h4>RECENT POSTS</h4>
+                        <hr />
+                        <ul>
+                            <li><a href="#">Etiam adipiscing posuere justo, nec iaculis justo dictum non</a></li>
+                            <li><a href="#">Cras tincidunt mi non arcu hendrerit eleifend</a></li>
+                            <li><a href="#">Aenean ullamcorper justo tincidunt justo aliquet et lobortis diam faucibus</a></li>
+                            <li><a href="#">Maecenas hendrerit neque id ante dictum mattis</a></li>
+                            <li><a href="#">Vivamus non neque lacus, et cursus tortor</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget">
+                        <h4>ABOUT</h4>
+                        <hr />
+                        <p>Nulla facilisi. Sed justo dui, id erat. Morbi auctor adipiscing tempor. Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. Proin rutrum, erat eget posuere semper, arcu mauris posuere tortor,velit at magna sollicitudin cursus ac ultrices magna. Aliquam consequat, purus vitae auctor ullamcorper, sem velit convallis quam, a pharetra justo nunc et mauris. </p>
+                    </div>
+                </div>
+            </div>  
         </div>
 
         <!--footer-->
@@ -259,11 +327,188 @@
             <a href="#"><i class="fa fa-lg fa-chevron-up"></i></a>
         </span>
 
+        <!-- modals -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" id="login-title">Login</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form name="loginForm" class="form-horizontal" action="#" role="form">
+                            <div class="form-group">
+                                <label for="loginEmail" class="control-label col-md-3">Email</label>
+                                <div class="col-md-9">
+                                    <input type="loginEmail" type="text" class="form-control" placeholder="Enter an email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword" class="control-label col-md-3">Password</label>
+                                <div class="col-md-9">
+                                    <input id="loginPassword" type="password" class="form-control" placeholder="Enter a password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <div class="checkbox">                                                                        
+                                        <label>Remember Me?
+                                            <input type="checkbox" name="rememberMe">
+                                        </label>
+                                    </div>    
+                                </div>    
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    <button type="reset" class="btn btn-default">Sign in</button>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="register.html">Register</a> here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" id="register-title">Register</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registerForm" class="form-horizontal" action="#" role="form">
+                            <div class="form-group">
+                                <label class="control-label col-md-3" for="registerName">Name</label>
+                                <div class="col-md-9">
+                                    <input id="registerName" type="text" class="form-control" placeholder="Enter a name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail" class="control-label col-md-3">Email</label>
+                                <div class="col-md-9">
+                                    <input id="registerEmail" class="form-control" type="email" placeholder="Enter an email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerUsername" class="control-label col-md-3">Username</label>
+                                <div class="col-md-9">
+                                    <input id="registerUsername" class="form-control" type="text" placeholder="Enter an email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerType" class="control-label col-md-3">Type</label>
+                                <div class="col-md-9">
+                                    <select id="registerType" class="form-control">
+                                        <option></option>
+                                        <option>Trial</option>
+                                        <option>Basic</option>
+                                        <option>Premium</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword" class="control-label col-md-3">Password</label>
+                                <div class="col-md-9">
+                                    <input id="registerPassword" class="form-control" type="password" placeholder="Enter an password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerRepeatedPassword" class="control-label col-md-3">Repeat a password</label>
+                                <div class="col-md-9">
+                                    <input id="registerRepeatedPassword" class="form-control" type="password" placeholder="Repeat a password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-9 col-md-offset-3">
+                                    <div class="checkbox">
+                                        <label>Agree with <a href="geeneral.html">Terms &amp; Conditions</a>
+                                            <input type="checkbox" name="agreeTerms">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                    <button type="reset" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="login.html">Login</a> here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cartModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 id="cart-title" class="modal-title">Shopping Cart</h3>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>                            
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">iPhone 5c</a></td>
+                                    <td>2</td>
+                                    <td>$650</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">HTC One</a></td>
+                                    <td>2</td>
+                                    <td><i class="fa fa-euro"></i>450</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Samsung Galaxy II</td>
+                                    <td>2</td>
+                                    <td><i class="fa fa-euro"></i>450</td>
+                                </tr>      
+                                <tr>
+                                    <td><a href="#">Apple iPad 2</a></td>
+                                    <td>1</td>
+                                    <td>$750</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Samsung Note II</a></td>
+                                    <td>1</td>
+                                    <td>$600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Continue Shopping</button>
+                        <button type="button" class="btn btn-danger">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap core JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
         <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
         <script src="js/libs/jquery/jquery.min.js"></script>
         <!--        <script src="js/libs/bootstrap/bootstrap.min.js"></script>-->
         <script src="js/libs/bootstrap/bootstrap.js"></script>
+        <!-- Support Page Filter Input -->
+        <script type="text/javascript" src="js/filter.js"></script>
+        <!-- Custom Retail Store Script -->
+        <script type="text/javascript" src="js/retail.js"></script>
     </body>
 </html>
