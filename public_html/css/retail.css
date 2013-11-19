@@ -7,6 +7,32 @@ body {
     padding-top: 60px;
 }
 
+/* 404 */
+.big-text {
+    font-size: 170px;
+    line-height: 180px;
+    color: rgb(153, 153, 153);
+}
+
+/* Cart */
+.tcart td img {
+    max-height: 50px;    
+}
+
+.tcart .cart-quantity input:focus {
+    border-color: rgb(52, 152, 219);
+}
+
+.tcart .input-group {
+    /*display: inline-block;*/
+    max-width: 140px;
+}
+
+/* Confirmation */
+.confirmation-link-p a {
+    margin: 0 10px;
+}
+
 /* Contact */
 .head-block {
     width: 100%;
@@ -98,7 +124,7 @@ select {
 }
 
 #account-menu > li {
-    padding: 10px 10px 10px 20px;
+    /*padding: 10px 10px 10px 20px;*/
     border-bottom: 1px solid #ecf0f1;
     border-left: 3px solid rgb(24, 188, 156);
 }
@@ -108,6 +134,8 @@ select {
 }
 
 #account-menu > li > a {
+    display: block;
+    padding: 10px 10px 10px 20px;
     color: rgb(44, 62, 80);
     text-decoration: none;
 }
@@ -430,11 +458,11 @@ widget {
 }
 
 .recent .carousel .item .col-md-3:first-child {
-    padding-left: 0;
+    /*padding-left: 0;*/
 }
 
 .recent .carousel .item .col-md-3:last-child {
-    padding-right: 0;
+    /*padding-right: 0;*/
 }
 
 .recent-item-img {
