@@ -120,28 +120,46 @@ select {
 }
 
 /* account */
-#account-menu {
+.menu {
     list-style: none;
     padding-left: 0;
     background-color: rgb(236, 240, 241);
     width: 100%;
 }
 
-#account-menu > li {
+.menu > li {
     /*padding: 10px 10px 10px 20px;*/
     border-bottom: 1px solid #ecf0f1;
     border-left: 3px solid rgb(24, 188, 156);
 }
 
-#account-menu > li:hover {
+.menu > li:hover {
     background-color:  rgb(216, 230, 231);
 }
 
-#account-menu > li > a {
+.menu > li > a {
     display: block;
     padding: 10px 10px 10px 20px;
     color: rgb(44, 62, 80);
     text-decoration: none;
+}
+
+/* Items */
+.sidebar-item {
+    /*border: 1px solid black;*/
+}
+
+.items-title {
+    font-size: 19px;
+    line-height: 21px;
+}
+
+.sidebar-item img {
+    max-width: 50px;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: auto;
+    float: left;
 }
 
 /* Modals */

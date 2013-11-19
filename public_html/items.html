@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="online retail store">        
+        <meta name="author" content="Paul Kulitski">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Half-Page Full Width Slider Starter Template for Bootstrap</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Add custom CSS here -->
+        <link href="css/retail.css" rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+        <!-- Respond.js -->
+        <script src="js/libs/respond/respond.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+            <div class="container" >
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-retail-collapse">
+                        <span class="sr-only">Retail Store Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-lg fa-home"></i></a>                   
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-retail-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#store">Store</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">
+                                Pages 
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="#"><i class="fa fa-home"></i> &nbsp; General</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-headphones"></i> &nbsp; Support</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-user"></i> &nbsp; Login</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-users"></i> &nbsp; Register</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-book"></i> &nbsp; Blog</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Blog Article</a></li>
+                                <li role="presentation"><a href="#"><i class="fa fa-warning"></i> &nbsp; 404</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#account">
+                                <i class="fa fa-user"></i> &nbsp;Account
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li role="presentation"><a href="#">My Account</a></li>
+                                <li role="presentation"><a href="#">View Cart</a></li>
+                                <li role="presentation"><a href="#">Checkout</a></li>
+                                <li role="presentation"><a href="#">Wish List</a></li>
+                                <li role="presentation"><a href="#">Order History</a></li>
+                                <li role="presentation"><a href="#">Edit Profile</a></li>
+                                <li role="presentation"><a href="#">Confirmation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" data-toggle="modal" data-target="#cartModal">5 item(s) in your <i class="fa fa-shopping-cart"></i> - 25 <i class="fa fa-dollar"></i></a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#sign">
+                                <i class="glyphicon glyphicon-user"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#login" data-toggle="modal" data-target="#loginModal">Login</a></li>
+                                <li><a href="#register" data-toggle="modal" data-target="#registerModal">Register</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form name="search-form" class="navbar-form navbar-left" role="search">
+                        <i class="glyphicon glyphicon-search"></i>
+                        <input id="search" type="text" class="form-control col-md-6" placeholder="Search">
+                    </form>
+                </div> <!--/.navbar-collapse -->
+            </div><!-- /.container -->
+        </nav>
+
+        <div class="container">
+            <div class="row" style="margin-top: 30px; margin-bottom: 15px;">
+                <div class="col-md-3">
+                    <!-- menu -->
+                    <h4>Categories</h4>
+                    <hr />
+                    <ul id="categories-menu" class="menu">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="items.html">Smartphone</a></li>
+                        <li><a href="items.html">Tablet</a></li>
+                        <li><a href="items.html">Digital Camera</a></li>
+                        <li><a href="items.html">Computer</a></li>
+                        <li><a href="items.html">Software</a></li>
+                    </ul>
+                    <div class="sidebar-items">
+                        <h4>Featured Items</h4>
+                        <hr />
+                        <div class="sidebar-item clearfix">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="img/devices/phones/1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="#">HTC One V</a>
+                                <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                <span class="badge">$299</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="sidebar-item clearfix">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="img/devices/phones/2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="#">HTC One V</a>
+                                <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                <span class="badge">$330</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="sidebar-item clearfix">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="img/devices/phones/3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="#">Apple Mini</a>
+                                <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                <span class="badge">$430</span>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="sidebar-item clearfix">
+                            <div class="col-md-3">
+                                <a href="#">
+                                    <img src="img/devices/phones/4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="#">Sony Duo</a>
+                                <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                <span class="badge">$199</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <a href="#">Home </a>/ <a href="items.html">Smartphone </a> / Apple                    
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-3">
+                            <span class="items-title pull-left">Apple phones</span>
+                        </div>
+                        <div class="col-md-3 col-md-offset-6">
+                            <select class="items-select pull-right form-control input-sm" name="itemsSelect">
+                                <option value="default">Sort By</option>
+                                <option value="name-acs">Name (A-Z)</option>
+                                <option value="name-desc">Name (Z-A)</option>
+                                <option value="price-asc">Price (Lowest - Highest)</option>
+                                <option value="price-desc">Price (Highest - Lowest)</option>
+                                <option value="ratings">Ratings</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/1.png" alt="htc" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">HTC One V &nbsp; <span class="label label-danger">HOT</span></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$360</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/3.png" alt="cannon" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">Cannon One V</h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$330</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/2.png" alt="dell" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">Dell One V &nbsp; <span class="label label-warning push-right">DEAL</span></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$220</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/2.png" alt="dell" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">Dell One V &nbsp; <span class="label label-warning push-right">DEAL</span></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$220</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/1.png" alt="htc" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">HTC One V &nbsp; <span class="label label-danger">HOT</span></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$360</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/3.png" alt="cannon" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">Cannon One V</h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$330</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/1.png" alt="htc" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">HTC One V &nbsp; <span class="label label-danger">HOT</span></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$360</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/2.png" alt="dell" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">Dell One V &nbsp; <span class="label label-warning push-right">DEAL</span></h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$220</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item-ct">
+                                <div class="item-ct-image">
+                                    <a href="#">
+                                        <img class="center-block" src="img/devices/phones/3.png" alt="cannon" />
+                                    </a>
+                                </div>                        
+                                <div class="item-ct-details">
+                                    <h4 class="text-center">Cannon One V</h4>
+                                    <div class="clearfix"></div>
+                                    <p>Something about the product goes here. Not More than 2 lines.</p>
+                                    <hr />
+                                    <span class="badge pull-left">$330</span>
+                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="pagination" style="margin-left: 15px;">
+                            <li class="disabled">
+                                <a href="#">«</a>
+                            </li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="items.html">2</a></li>
+                            <li><a href="items.html">3</a></li>
+                            <li><a href="items.html">4</a></li>
+                            <li><a href="items.html">5</a></li>
+                            <li><a href="items.html">6</a></li>
+                            <li>
+                                <a href="#">»</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>           
+            </div>
+            <!--recent-->
+            <div class="row">
+                <!--recent-->
+                <div class="recent">
+                    <h3 class="text-center">Recent Devices</h3>
+                    <hr style="margin-bottom: 6px;"/>
+
+                    <div class="control-container pull-right">
+                        <a class="carousel-control" href="#recent-carousel" data-slide="prev">
+                            <span class="fa fa-chevron-left"></span>
+                        </a>
+
+                        <a class="carousel-control" href="#recent-carousel" data-slide="next">
+                            <span class="fa fa-chevron-right"></span>
+                        </a>
+                    </div>
+                    <div class="clearfix" style="margin-bottom: 6px;"></div>
+
+                    <div id="recent-carousel" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/1.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    iPhone Magic <span class="badge pull-right">$400</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/2.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Nexus X <span class="badge pull-right">$510</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/3.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    HTC GoAhead <span class="badge pull-right">$620</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/4.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Android 4.4 KitKat <span class="badge pull-right">$400</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/5.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Alcatel Blaze<span class="badge pull-right">$385</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/6.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Soxy Razor <span class="badge pull-right">$510</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/7.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Google Nexus Z <span class="badge pull-right">$620</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/8.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Mozilla OS Beta <span class="badge pull-right">free</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/9.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    Nokia Finnish <span class="badge pull-right">$240</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/10.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    iPhone 5S Gold <span class="badge pull-right">$610</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/3.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    iPhone 5c <span class="badge pull-right">$490</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="recent-item">
+                                        <div class="recent-item-img">
+                                            <a href="#">
+                                                <img class="center-block" src="img/devices/phones/4.png" alt="140x180" />
+                                            </a>
+                                        </div>
+                                        <div class="recent-item-details">
+                                            <h4>
+                                                <a href="#">
+                                                    iOS 7 <span class="badge pull-right">$40</span>
+                                                </a>
+                                            </h4>                                        
+                                            <div class="clearfix"></div> 
+                                            <p>Aenean ullamcorper justo tincidunt justo aliquet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+
+            <!--subscribe-->
+            <div class="well well-lg">
+                <h4><span class="glyphicon glyphicon-envelope"></span><span> Hot offers - Don't miss anything</span></h4>
+                <p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. Phasellus condimentum rutrum aliquet.</p>
+                <form class="form-inline">
+                    <div class="form-group" style="width: 30%;" >
+                        <label class="sr-only" for="subscribe">Subscribe</label>
+                        <input class="form-control" type="text" id="subscribe" placeholder="Enter your e-mail to Subscribe" />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="ft">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="widget">
+                            <h4>Contact</h4>
+                            <hr class="ft-hr" />
+                            <div class="social">
+                                <a href="#"><i class="fa fa-facebook facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin linkedin"></i></a>
+                                <a href="#"><i class="fa fa-google-plus google-plus"></i></a> 
+                                <a href="#"><i class="fa fa-linkedin linkedin"></i></a> 
+                            </div>
+                            <hr class="ft-hr" />
+                            <i class="glyphicon glyphicon-home"></i> &nbsp; 123, Some Area. Los Angeles, CA, 54321.
+                            <hr class="ft-hr" />
+                            <i class="glyphicon glyphicon-earphone"></i> &nbsp; +239-3823-3434 +239-3843-6787
+                            <hr class="ft-hr" />
+                            <i class="glyphicon glyphicon-envelope"></i> &nbsp; <a href="mailto:#">someone@company.com</a>
+                            <hr class="ft-hr" />
+                            <div class="payments">
+                                <img src="img/payment-icons/paypal-straight-32px.png" alt="paypal" />
+                                <img src="img/payment-icons/visa-straight-32px.png" alt="visa" />
+                                <img src="img/payment-icons/western-union-straight-32px.png" alt="western union" />
+                                <img src="img/payment-icons/american-express-straight-32px.png" alt="american express" />
+                                <img src="img/payment-icons/mastercard-straight-32px.png" alt="master card" />
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="widget">
+                            <h4>About Us</h4>
+                            <hr class="ft-hr" />
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Curabitur pulvinar ornare vulputate scelerisque scelerisque ut consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum dolor eget nisi fermentum quis hendrerit magna vestibulum.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="widget">
+                            <h4>Links Goes Here</h4>
+                            <hr class="ft-hr" />
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="ft-list">
+                                        <li><a href="#">Condimentum</a></li>
+                                        <li><a href="#">Etiam at</a></li>
+                                        <li><a href="#">Fusce vel</a></li>
+                                        <li><a href="#">Vivamus</a></li>
+                                        <li><a href="#">Pellentesque</a></li>
+                                        <li><a href="#">Etiam at</a></li>
+                                        <li><a href="#">Fusce vel</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="ft-list">
+                                        <li><a href="#">Vivamus</a></li>
+                                        <li><a href="#">Pellentesque</a></li>
+                                        <li><a href="#">Vivamus</a></li>
+                                        <li><a href="#">Pellentesque</a></li>
+                                        <li><a href="#">Condimentum</a></li>
+                                        <li><a href="#">Etiam at</a></li>
+                                        <li><a href="#">Fusce vel</a></li>
+                                    </ul>                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                        
+                    <div class="col-md-12">
+                        <hr class="ft-hr"/>
+                        <p class="copy">Copyright | <a href="#">Your Site</a> - <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Service</a> | <a href="#">Contact Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--totop-->
+        <span class="totop">
+            <a href="#"><i class="fa fa-lg fa-chevron-up"></i></a>
+        </span>
+
+        <!-- modals -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" id="login-title">Login</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form name="loginForm" class="form-horizontal" action="#" role="form">
+                            <div class="form-group">
+                                <label for="loginEmail" class="control-label col-md-3">Email</label>
+                                <div class="col-md-9">
+                                    <input type="loginEmail" type="text" class="form-control" placeholder="Enter an email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="loginPassword" class="control-label col-md-3">Password</label>
+                                <div class="col-md-9">
+                                    <input id="loginPassword" type="password" class="form-control" placeholder="Enter a password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-6 col-md-offset-3">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                    <button type="reset" class="btn btn-default">Sign in</button>
+                                </div>
+                            </div>
+                        </form>                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>Don't have an account? <a href="#register">Register</a> here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 class="modal-title" id="register-title">Register</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form id="registerForm" class="form-horizontal" action="#" role="form">
+                            <div class="form-group">
+                                <label class="control-label col-md-3" for="registerName">Name</label>
+                                <div class="col-md-9">
+                                    <input id="registerName" type="text" class="form-control" placeholder="Enter a name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerEmail" class="control-label col-md-3">Email</label>
+                                <div class="col-md-9">
+                                    <input id="registerEmail" class="form-control" type="email" placeholder="Enter an email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerUsername" class="control-label col-md-3">Username</label>
+                                <div class="col-md-9">
+                                    <input id="registerUsername" class="form-control" type="text" placeholder="Enter an email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerType" class="control-label col-md-3">Type</label>
+                                <div class="col-md-9">
+                                    <select id="registerType" class="form-control">
+                                        <option></option>
+                                        <option>Trial</option>
+                                        <option>Basic</option>
+                                        <option>Premium</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerPassword" class="control-label col-md-3">Password</label>
+                                <div class="col-md-9">
+                                    <input id="registerPassword" class="form-control" type="password" placeholder="Enter an password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="registerRepeatedPassword" class="control-label col-md-3">Repeat a password</label>
+                                <div class="col-md-9">
+                                    <input id="registerRepeatedPassword" class="form-control" type="password" placeholder="Repeat a password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <button type="button" class="btn btn-primary">Register</button>
+                                    <button type="reset" class="btn btn-default">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have an account? <a href="#login">Login</a> here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cartModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h3 id="cart-title" class="modal-title">Shopping Cart</h3>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                </tr>                            
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#">iPhone 5c</a></td>
+                                    <td>2</td>
+                                    <td>$650</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">HTC One</a></td>
+                                    <td>2</td>
+                                    <td><i class="fa fa-euro"></i>450</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Samsung Galaxy II</td>
+                                    <td>2</td>
+                                    <td><i class="fa fa-euro"></i>450</td>
+                                </tr>      
+                                <tr>
+                                    <td><a href="#">Apple iPad 2</a></td>
+                                    <td>1</td>
+                                    <td>$750</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#">Samsung Note II</a></td>
+                                    <td>1</td>
+                                    <td>$600</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning">Continue Shopping</button>
+                        <button type="button" class="btn btn-danger">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <!--        <script src="js/libs/bootstrap/bootstrap.min.js"></script>-->
+        <script src="js/libs/bootstrap/bootstrap.js"></script>
+        <!-- Support Page Filter Input -->
+        <script type="text/javascript" src="js/filter.js"></script>
+        <!-- Custom Retail Store Script -->
+        <script type="text/javascript" src="js/retail.js"></script>
+    </body>
+</html>
