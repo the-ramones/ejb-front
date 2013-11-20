@@ -102,11 +102,44 @@
                     <hr />
                     <ul id="categories-menu" class="menu">
                         <li><a href="main.html">Home</a></li>
-                        <li><a href="items.html">Smartphone</a></li>
-                        <li><a href="items.html">Tablet</a></li>
-                        <li><a href="items.html">Digital Camera</a></li>
-                        <li><a href="items.html">Computer</a></li>
-                        <li><a href="items.html">Software</a></li>
+                        <li class="has-sub">
+                            <a href="#">Smartphone
+                                <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+                            </a>
+                            <ul>
+                                <li><a href="items.html">Apple</a></li>
+                                <li><a href="items.html">Google</a></li>
+                                <li><a href="items.html">Samsung</a></li>
+                                <li><a href="items.html">HTC</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#">Tablet
+                                <span class="pull-right glyphicon glyphicon-plus-sign"></span>
+                            </a>
+                            <ul>
+                                <li><a href="items.html">Apple</a></li>
+                                <li><a href="items.html">Google</a></li>
+                                <li><a href="items.html">Samsung</a></li>
+                                <li><a href="items.html">HTC</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-sub">
+                            <a href="#">Digital Camera
+                                <span class="pull-right glyphicon glyphicon-plus-sign"></span>                            
+                            </a>
+                            <ul>
+                                <li><a href="items.html">Sony</a></li>
+                                <li><a href="items.html">Philips</a></li>
+                                <li><a href="items.html">LG</a></li>
+                                <li><a href="items.html">Bosch</a></li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Computer</a>
+                        </li>
+                        <li><a href="#">Software</a></li>
                     </ul>
                     <div class="sidebar-items">
                         <h4>Featured Items</h4>
@@ -168,204 +201,210 @@
                     <a href="#">Home </a>/ <a href="items.html">Smartphone </a> / Apple                    
                     <hr />
                     <div class="row">
-                        <div class="col-md-3">
-                            <span class="items-title pull-left">Apple phones</span>
-                        </div>
-                        <div class="col-md-3 col-md-offset-6">
-                            <select class="items-select pull-right form-control input-sm" name="itemsSelect">
-                                <option value="default">Sort By</option>
-                                <option value="name-acs">Name (A-Z)</option>
-                                <option value="name-desc">Name (Z-A)</option>
-                                <option value="price-asc">Price (Lowest - Highest)</option>
-                                <option value="price-desc">Price (Highest - Lowest)</option>
-                                <option value="ratings">Ratings</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/1.png" alt="htc" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">HTC One V &nbsp; <span class="label label-danger">HOT</span></h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$360</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                        <div class="col-md-5">
+                            <div id="product-carousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="img/devices/phones/5.png">
+                                    </div>                                        
+                                    <div class="item">
+                                        <img class="text-center" src="img/devices/phones/6.png">
+                                    </div>                                       
+                                    <div class="item">
+                                        <img src="img/devices/phones/7.png">
+                                    </div>                                        
+                                    <div class="item">
+                                        <img src="img/devices/phones/8.png">
+                                    </div>                                        
+                                    <div class="item">
+                                        <img src="img/devices/phones/9.png">
+                                    </div>   
                                 </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/3.png" alt="cannon" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">Cannon One V</h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$330</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/2.png" alt="dell" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">Dell One V &nbsp; <span class="label label-warning push-right">DEAL</span></h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$220</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/2.png" alt="dell" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">Dell One V &nbsp; <span class="label label-warning push-right">DEAL</span></h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$220</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/1.png" alt="htc" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">HTC One V &nbsp; <span class="label label-danger">HOT</span></h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$360</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/3.png" alt="cannon" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">Cannon One V</h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$330</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/1.png" alt="htc" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">HTC One V &nbsp; <span class="label label-danger">HOT</span></h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$360</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
+                                <a class="left carousel-control" href="#product-carousel" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#product-carousel" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+
+                            </div>                            
                         </div>
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/2.png" alt="dell" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">Dell One V &nbsp; <span class="label label-warning push-right">DEAL</span></h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$220</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
+                        <div class="col-md-7 product-main">
+                            <h3>Apple iPhone 5G</h3>
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th>Brand</th>
+                                        <th><a href="#">Apple</a></th>                                        
+                                    </tr>
+                                    <tr>
+                                        <th>Model</th>
+                                        <th>5G</th>                                        
+                                    </tr>
+                                    <tr>
+                                        <th>Price</th>
+                                        <th>$499</th>                                        
+                                    </tr>
+                                    <tr>
+                                        <th>Shipping</th>
+                                        <th><span class="label label-success">free</span></th>                                        
+                                    </tr>
+                                    <tr>
+                                        <th>Availability</th>
+                                        <th><span class="label label-primary">in stock</span></th>                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <select class="input-sm form-control">
+                                <option value="">Color</option>
+                                <option value="while">White</option>
+                                <option value="black">Black</option>
+                                <option value="gold">Gold</option>
+                            </select>
+                            <div class="input-group">
+                                <input type="text" class="form-control input-sm" id="cartQuantity" value="2">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-sm btn-default">Add to Cart</button>
                                 </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="item-ct">
-                                <div class="item-ct-image">
-                                    <a href="#">
-                                        <img class="center-block" src="img/devices/phones/3.png" alt="cannon" />
-                                    </a>
-                                </div>                        
-                                <div class="item-ct-details">
-                                    <h4 class="text-center">Cannon One V</h4>
-                                    <div class="clearfix"></div>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <hr />
-                                    <span class="badge pull-left">$330</span>
-                                    <a href="#" class="btn btn-xs btn-primary pull-right">Add to Cart</a>
-                                </div>
-                                <div class="clearfix"></div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <ul class="pagination" style="margin-left: 15px;">
-                            <li class="disabled">
-                                <a href="#">«</a>
-                            </li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="items.html">2</a></li>
-                            <li><a href="items.html">3</a></li>
-                            <li><a href="items.html">4</a></li>
-                            <li><a href="items.html">5</a></li>
-                            <li><a href="items.html">6</a></li>
-                            <li>
-                                <a href="#">»</a>
-                            </li>
-                        </ul>
+                        <div class="col-md-12">
+                            <ul class="nav nav-tabs">
+                                <li class="active">
+                                    <a href="#desc" data-toggle="tab">Description</a>
+                                </li>
+                                <li>
+                                    <a href="#spec" data-toggle="tab">Spec</a>
+                                </li>
+                                <li>
+                                    <a href="#review" data-toggle="tab">Review (5)</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div id="desc" class="tab-pane fade in active">
+                                    <h4>Apple iPhone 5G</h4>
+                                    <p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. Proin rutrum, erat eget posuere semper, arcu mauris posuere tortor, in commodo enim magna id massa. Suspendisse potenti. Aliquam erat volutpat. Maecenas quis tristique turpis. Nulla facilisi. Duis sed velit at magna sollicitudin cursus ac ultrices magna. Aliquam consequat, purus vitae auctor ullamcorper, sem velit convallis quam, a pharetra justo nunc et mauris. Vivamus diam diam, fermentum sed dapibus eget, egestas sed eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <h5>Features</h5>
+                                    <ul>
+                                        <li>Etiam adipiscing posuere justo, nec iaculis justo dictum non</li>
+                                        <li>Cras tincidunt mi non arcu hendrerit eleifend</li>
+                                        <li>Aenean ullamcorper justo tincidunt justo aliquet et lobortis diam faucibus</li>
+                                        <li>Maecenas hendrerit neque id ante dictum mattis</li>
+                                        <li>Vivamus non neque lacus, et cursus tortor</li>
+                                    </ul>
+                                </div>
+                                <div id="spec" class="tab-pane fade">
+                                    <h4>Product Specs</h4>
+                                    <hr />
+                                    <div class="table-responsive">
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Apple iPhone 5G</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brand</td>
+                                                    <td>Apple</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>Model</td>
+                                                    <td>Fifth Generation</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Memory</td>
+                                                    <td>2GB RAM</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Storage</td>
+                                                    <td>16GB, 32GB, 64GB</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Camera</td>
+                                                    <td>Front VGA, Rear 8Mp</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Processor</td>
+                                                    <td>Apple 1,25Hz Processor </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Battery</td>
+                                                    <td>30 Hours Standby</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div id="review" class="tab-pane fade">
+                                    <h4>Product Reviews</h4>
+                                    <div class="well">
+                                        <h5>Daniel Sammerson - <a href="#">1/5</a></h5>
+                                        <span>24/05/2013</span><br/>
+                                        <p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+                                    </div>
+                                    <div class="well">
+                                        <h5>Manica Vinyard - <a href="#">2/5</a></h5>
+                                        <span>24/10/2013</span><br/>
+                                        <p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+                                    </div>
+                                    <div class="well">
+                                        <h5>Joshua Bulluck - <a href="#">3/5</a></h5>
+                                        <span>24/05/2013</span><br/>
+                                        <p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+                                    </div>
+                                    <div class="well">
+                                        <h5>Bridgit Gerrars - <a href="#">4/5</a></h5>
+                                        <span>24/05/2013</span><br/>
+                                        <p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+                                    </div>
+                                    <div class="well">
+                                        <h5>Li Suann - <a href="#">5/5</a></h5>
+                                        <span>24/05/2013</span><br/>
+                                        <p>Suspendisse potenti. Morbi ac felis nec mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia nulla vel tellus elementum non mollis justo aliquam.</p>
+                                    </div>
+                                    <hr />                                                              
+                                    <div class="review-form">
+                                        <form name="reviewForm" class="form-horizontal" action="#" role="form" aria-hidden="true">
+                                            <div class="form-group">
+                                                <label for="reviewName" class="col-md-2 control-label">Name</label>
+                                                <div class="col-md-10">
+                                                    <input type="text" id="reviewName" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="reviewRating" class="control-label col-md-2">Rating</label>
+                                                <div class="col-md-10">
+                                                    <select id="reviewRating" name="reviewRating" class="form-control">
+                                                        <option></option>
+                                                        <option value="1"></option>
+                                                        <option value="2"></option>
+                                                        <option value="3"></option>
+                                                        <option value=4></option>
+                                                        <option value="5"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="reviewName" class="col-md-2 control-label">Your Name</label>
+                                                <div class="col-md-10">
+                                                    <textarea name="reviewBody" class="form-control"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-6 col-md-offset-2">
+                                                    <button type="button" class="btn btn-sm btn-primary">Post</button>
+                                                    <button type="reset" class="btn btn-sm btn-default">Reset</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>           
             </div>

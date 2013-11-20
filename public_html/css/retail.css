@@ -127,23 +127,38 @@ select {
     width: 100%;
 }
 
-.menu > li {
-    /*padding: 10px 10px 10px 20px;*/
-    border-bottom: 1px solid #ecf0f1;
-    border-left: 3px solid rgb(24, 188, 156);
-}
-
-.menu > li:hover {
+.menu li a:hover {
     background-color:  rgb(216, 230, 231);
 }
 
-.menu > li > a {
+.menu li a {
     display: block;
     padding: 10px 10px 10px 20px;
     color: rgb(44, 62, 80);
     text-decoration: none;
 }
 
+.menu > li > a {
+    border-bottom: 1px solid #ecf0f1;
+    border-left: 3px solid rgb(24, 188, 156);
+}
+
+.menu li.has-sub ul {
+    list-style: none;
+    padding-left: 0;
+    display: none;
+}
+
+.menu li.has-sub ul a {
+    padding-left: 40px;
+}
+.menu li.has-sub ul a {
+    text-decoration: none;
+}
+
+.menu .li.has-sub > span.plus:before {
+    content: "\2b";
+}
 /* Items */
 .sidebar-item {
     /*border: 1px solid black;*/
@@ -398,6 +413,41 @@ footer {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+/* Single item */
+#spec table tr td:first-child {
+    font-weight: bold;
+}
+
+.product-main select {
+    margin-top: 5px;
+    max-width: 100px;
+}
+
+.product-main .input-group {
+    margin-top: 10px;
+    max-width: 140px;
+}
+
+#product-carousel img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-height: 400px;
+    height: 400px;
+    width: auto;
+}
+
+#product-carousel .carousel-control {
+    background-image: none;
+    color: rgb(44, 62, 80);
+    text-decoration: none;
+    outline: none;
+}
+
+#product-carousel .carousel-control span {
+}
+
 /* Main */
 .totop {
     display: block;
