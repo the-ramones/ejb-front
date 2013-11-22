@@ -490,7 +490,7 @@ footer {
 .item-ct{
     min-height: 280px;
     /*max-height: 300px;*/
-    max-width: 250px;
+    /*max-width: 250px;*/
     margin: 10px auto;
     padding: 10px 10px;
     border: 1px solid #f3f3f3;

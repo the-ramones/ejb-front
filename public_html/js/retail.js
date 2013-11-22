@@ -17,7 +17,7 @@ $("#categories-menu li.has-sub").click(function() {
 });
 
 $(document).ready(function() {
-    alert("1-2-3");
+
     $(".totop").hide();
 
     $(window).scroll(function() {
