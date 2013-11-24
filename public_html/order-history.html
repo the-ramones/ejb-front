@@ -21,6 +21,9 @@
         <!-- Respond.js -->
         <script src="js/libs/respond/respond.min.js"></script>
 
+                <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon/favicon.ico">
+
     </head>
 
     <body>
@@ -47,13 +50,13 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li role="presentation"><a href="#"><i class="fa fa-home"></i> &nbsp; General</a></li>
-                                <li role="presentation"><a href="#"><i class="fa fa-headphones"></i> &nbsp; Support</a></li>
-                                <li role="presentation"><a href="#"><i class="fa fa-user"></i> &nbsp; Login</a></li>
-                                <li role="presentation"><a href="#"><i class="fa fa-users"></i> &nbsp; Register</a></li>
-                                <li role="presentation"><a href="#"><i class="fa fa-book"></i> &nbsp; Blog</a></li>
-                                <li role="presentation"><a href="#"><i class="fa fa-comments-o"></i> &nbsp; Blog Article</a></li>
-                                <li role="presentation"><a href="#"><i class="fa fa-warning"></i> &nbsp; 404</a></li>
+                                <li role="presentation"><a href="general.html"><i class="fa fa-home"></i> &nbsp; General</a></li>
+                                <li role="presentation"><a href="support.html"><i class="fa fa-headphones"></i> &nbsp; Support</a></li>
+                                <li role="presentation"><a href="login.html"><i class="fa fa-user"></i> &nbsp; Login</a></li>
+                                <li role="presentation"><a href="register.html"><i class="fa fa-users"></i> &nbsp; Register</a></li>
+                                <li role="presentation"><a href="blog.html"><i class="fa fa-book"></i> &nbsp; Blog</a></li>
+                                <li role="presentation"><a href="blog-article.html"><i class="fa fa-comments-o"></i> &nbsp; Blog Article</a></li>
+                                <li role="presentation"><a href="404.html"><i class="fa fa-warning"></i> &nbsp; 404</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -62,19 +65,29 @@
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li role="presentation"><a href="#">My Account</a></li>
-                                <li role="presentation"><a href="#">View Cart</a></li>
-                                <li role="presentation"><a href="#">Checkout</a></li>
-                                <li role="presentation"><a href="#">Wish List</a></li>
-                                <li role="presentation"><a href="#">Order History</a></li>
-                                <li role="presentation"><a href="#">Edit Profile</a></li>
-                                <li role="presentation"><a href="#">Confirmation</a></li>
+                                <li role="presentation"><a href="account.html">My Account</a></li>
+                                <li role="presentation"><a href="cart.html">View Cart</a></li>
+                                <li role="presentation"><a href="checkout.html">Checkout</a></li>
+                                <li role="presentation"><a href="wish-list.html">Wish List</a></li>
+                                <li role="presentation"><a href="order-history.html">Order History</a></li>
+                                <li role="presentation"><a href="edit-profile.html">Edit Profile</a></li>
+                                <li role="presentation"><a href="confirmation.html">Confirmation</a></li>
                             </ul>
                         </li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" data-toggle="modal" data-target="#cartModal">5 item(s) in your <i class="fa fa-shopping-cart"></i> - 25 <i class="fa fa-dollar"></i></a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#cartModal">5 item(s) in your <i class="fa fa-shopping-cart"></i> - 25 <i class="fa fa-dollar"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#sign">
                                 <i class="glyphicon glyphicon-user"></i>
